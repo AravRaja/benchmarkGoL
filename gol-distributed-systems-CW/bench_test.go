@@ -1,5 +1,5 @@
 // Example useage:
-// go test -run a$ -bench BenchmarkStudentVersion/512x512x1000-1 -timeout 100s -cpuprofile cpu.prof
+// go test -run a$ -bench BenchmarkStudentVersion/512x512x100-1 -timeout 100s -cpuprofile cpu.prof
 // to get results into .out file
 // go test -run ^$ -bench BenchmarkStudentVersion -benchtime 1x -count 4 | tee serial_implementation.out
 // to convert .out file to csv file
@@ -16,7 +16,7 @@ import (
 
 const benchLength = 100
 
-var imageWidths = []int{128, 256, 512, 1024, 2048}
+var imageWidths = []int{128, 256, 512, 5120}
 
 func BenchmarkStudentVersion(b *testing.B) {
 	for _, width := range imageWidths {
