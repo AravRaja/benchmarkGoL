@@ -501,7 +501,7 @@ func main() {
 	pAddr := flag.String("port", "8030", "Port to listen on")
 	flag.Parse()
 	broker := NewBrokerOperations()
-	broker.expectedNodes = 2 //gives the expected number of nodes to start Init on
+	broker.expectedNodes = 4 //gives the expected number of nodes to start Init on
 	go func() {              //checks if the num of nodes register is equal to the expected no
 		// if it is we start Init
 		broker.mu.Lock()
