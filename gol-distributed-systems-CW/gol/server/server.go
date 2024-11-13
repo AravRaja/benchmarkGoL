@@ -488,7 +488,7 @@ func main() {
 	if len(os.Args) > 1 {
 		port = os.Args[1]
 	} else {
-		port = "8050"
+		port = "8030"
 	} //allows u to enter the port in e.g go run server.go 8070
 
 	pAddr := flag.String("port", port, "Port to listen on")
