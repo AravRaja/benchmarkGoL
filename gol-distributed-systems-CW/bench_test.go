@@ -1,7 +1,7 @@
 // Example useage:
 // go test -run a$ -bench BenchmarkStudentVersion/512x512x100-1 -timeout 100s -cpuprofile cpu.prof
 // to get results into .out file
-// go test -run ^$ -bench BenchmarkStudentVersion -benchtime 1x -count 4 | tee serial_implementation.out
+// go test -run ^$ -bench BenchmarkStudentVersion -benchtime 1x -count 4 | tee results.out
 // to convert .out file to csv file
 // go run golang.org/x/perf/cmd/benchstat -format csv results.out | tee results.csv
 package main
