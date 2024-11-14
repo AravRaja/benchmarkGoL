@@ -440,7 +440,6 @@ func (n *NodeOperations) GetBorder(req *stubs.BorderRequest, res *stubs.BorderRe
 	// Set the response
 	res.Border = n.world[0]
 	res.Status = "Running"
-	fmt.Println("Border received and sent")
 
 	return nil
 }
